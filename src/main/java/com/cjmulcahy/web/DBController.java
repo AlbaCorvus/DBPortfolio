@@ -8,7 +8,7 @@ import org.springframework.web.servlet.ModelAndView;
  * Created by Chris on 1/16/2017.
  */
 @Controller
-@RequestMapping("DB")
+@RequestMapping("db")
 public class DBController {
 
 
