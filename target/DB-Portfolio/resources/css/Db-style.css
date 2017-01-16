@@ -1,0 +1,44 @@
+
+*{
+box-sizing:border-box;
+}
+
+html{
+height:100%;
+}
+
+body{
+height:100%;
+}
+
+header{
+padding-top:1em;
+position:relative;
+height:20%;
+background:url('../images/portfolio.png');
+background-size:100% 100%;
+background-repeat:no-repeat;
+
+}
+
+.logo{
+position:absolute;
+top:20%;
+right:15%;
+height:100%;
+width:8%;
+background:url('../images/logo.png');
+background-size:100% 100%;
+background-repeat:no-repeat;
+
+}
+
+.grey{
+background-color:#ccc;
+border:1px solid orange;
+color:orange;
+}
+
+.tall{
+min-height:80%;
+}
