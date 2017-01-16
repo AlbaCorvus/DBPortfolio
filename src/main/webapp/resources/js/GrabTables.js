@@ -11,13 +11,12 @@ msg+="" + key +" : " +val;
 $('#test_tables').html(msg);
 }).fail(function(){
 $('#test_tables').html("Sorry unable to retrieve table names");
-}).always(function(){
+});
+}
+
+
 $('#test_button').on('click',function(e){
 e.preventDefault();
 loadTableNames();
 });
-});
-
-
-}
 
