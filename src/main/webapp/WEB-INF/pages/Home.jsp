@@ -26,15 +26,30 @@ integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7T
 </header>
 <div class="container-fluid">
 <div class="row">
-<div class="col-md-4 grey tall">
-<button id="test_button">Test Ajax</button>
-<div id="test_tables">
-</div></div>
-<div class="col-md-8 grey"></div>
+<div class="col-md-2 m-t-1 grey tall">
+<button id="get_tables"></button>
+<div id="table-container" class="tables">
+
+</div>
+</div>
+<div class="col-md-8 col-md-offset-1 m-t-1 white">
+<div class="row">
+<div class="col-md-12 grey m-t-1"><div class="half-screen">
+<form id="sql-form" action="getResults" method="POST">
+<textarea id="sql-query" name="sql-query" placeholder="Sql queries here"></textarea><div id="charactersLeft">180</div>
+<input type="submit" class="send-sql" value="Send SQL">
+</form></div></div>
+<div class="col-md-12 grey m-t1"><div class="display-db-output screen-3">output goes here...</div></div>
+</div>
+</div>
 </div>
 </div>
 
+
 <script src="<c:url value="/resources/js/GrabTables.js"/>"></script>
+<script src="<c:url value="/resources/js/GetTableDetails.js"/>"></script>
+<script src="<c:url value="/resources/js/SendQuery.js"/>"></script>
+<script src="<c:url value="/resources/js/SendData.js"/>"></script>
 </body>
 
 </html>

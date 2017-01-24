@@ -2,20 +2,21 @@
 
 
 function loadTableNames(){
-$.getJSON('DB-Portfolio/db/import')
+$.getJSON('DB-Portfolio/db/importTables')
 .done(function(data){
-var msg="<h2>Table Names</h2>";
+var msg="<ul>";
 $.each(data,function(key,val){
-msg+="" + key +" : " +val;
+msg+="<li><a id="+val+" href='" + val +"'>" +val+"</a></li>";
 });
-$('#test_tables').html(msg);
+msg+="</ul>";
+$('#table-container').html(msg);
 }).fail(function(){
-$('#test_tables').html("Sorry unable to retrieve table names");
+$('#table-container').html("Sorry unable to retrieve table names");
 });
 }
 
 
-$('#test_button').on('click',function(e){
+$('#get_tables').on('click',function(e){
 e.preventDefault();
 loadTableNames();
 });

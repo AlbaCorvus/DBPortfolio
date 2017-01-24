@@ -1,8 +1,10 @@
 com\cjmulcahy\dao\ReadDBSchema.class
+com\cjmulcahy\domain\DataHolder.class
 com\cjmulcahy\dao\ReadDBSchemaImpl.class
 com\cjmulcahy\config\AppData.class
 com\cjmulcahy\service\ReadDBServiceImpl.class
 com\cjmulcahy\service\ReadDBService.class
 com\cjmulcahy\config\SpringMvcInitializer.class
+com\cjmulcahy\domain\DecypherTableData.class
 com\cjmulcahy\web\DBController.class
 com\cjmulcahy\config\SpringRootConfig.class

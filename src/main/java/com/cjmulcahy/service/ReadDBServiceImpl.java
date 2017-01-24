@@ -1,6 +1,7 @@
 package com.cjmulcahy.service;
 
 import com.cjmulcahy.dao.ReadDBSchema;
+import com.cjmulcahy.domain.DataHolder;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.sql.ResultSetMetaData;
@@ -26,7 +27,18 @@ public class ReadDBServiceImpl implements ReadDBService{
 
     @Transactional
     @Override
-    public ArrayList<String> listTables() throws SQLException {
+    public ArrayList<String> listColumns(String tableName) throws SQLException {
+        return readDB.listColumns(tableName);
+    }
+
+    @Transactional
+    @Override
+    public ArrayList<String> listTables() throws SQLException{
         return readDB.listTables();
+    }
+
+    @Override
+    public ArrayList<Object> processQuery(String query) throws SQLException {
+        return readDB.processQuery(query);
     }
 }
